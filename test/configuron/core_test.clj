@@ -36,3 +36,9 @@
   (is (= true (env :google-analytics?)))
   (is (= "yyyyy" (env :aws-key)))
   (is (= 8090 (env :port))))
+
+(deftest test-override
+  (spit ".lein-env" (prn-str {:env-name "devweb"}))
+  (reload)
+  (binding [configuron.core/env (configuron.core/env-override {:max-workers 1})]
+    (is (= 1 (env :max-workers)))))

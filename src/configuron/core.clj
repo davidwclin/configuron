@@ -12,6 +12,13 @@
       (if env-name (all-props env-name) {})
       environ/env)))
 
-(defn env
+(defn ^:dynamic env
   [key]
   (env* key))
+
+(defn env-override
+  "bind env to this to override configs for testing"
+  [overrides]
+  (fn [key]
+    (or (overrides key)
+        (env key))))
