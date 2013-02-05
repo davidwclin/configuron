@@ -37,11 +37,9 @@ The environment name being used (e.g. "prodherouku") <b>must</b> be specified ei
 
 1. create and populate resources/configs.clj
 2. specify environment name as environment variable
-
-	export ENV_NAME="devweb"
-   or in the Leiningen project map in project.clj
-   
-	:profiles {:devweb {:env {:env-name "devweb"}}}
+	<pre>export ENV_NAME="devweb"</pre>
+	or in the Leiningen project map in project.clj
+	<pre>:profiles {:devweb {:env {:env-name "devweb"}}}</pre>
 3. if specifying environment name in Leiningen project map, launch with corresponding profile
 
 	lein with-profile devweb ring server
