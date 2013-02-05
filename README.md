@@ -16,7 +16,7 @@ Sample configs.clj:
 	 "prod" {:google-analytics? true}
 	 "prodheroku" {:aws-key "yyyyy"}}
 	 
-Visual hierarchy for the above configs.clj:
+Environment hierarchy for the above configs.clj:
 
 	         default
 	         /     \
@@ -34,6 +34,11 @@ Properties are picked in this order of precedence:
 
 The environment name being used (e.g. "prodherouku") <b>must</b> be specified either as an environment variable (ENV_NAME) or as in the Leiningen project map under key :env-name.
 
+If you want to be able to draw settings from the Leiningen project map, you'll need the following plugin and hook:
+
+	:plugins [[environ/environ.lein "0.3.0"]]
+	:hooks [environ.leiningen.hooks]
+
 ## Usage
 
 1. create and populate resources/configs.clj
@@ -49,12 +54,6 @@ The environment name being used (e.g. "prodherouku") <b>must</b> be specified ei
 4. if specifying environment name in Leiningen project map, launch with corresponding profile
 
 	<pre>lein with-profile devweb ring server</pre>
-5. If you want to be able to draw settings from the Leiningen project map, you'll need the following plugin and hook:
-
-	<pre>
-	:plugins [[environ/environ.lein "0.3.0"]]
-	:hooks [environ.leiningen.hooks]
-	</pre>	
 
 ## License
 
