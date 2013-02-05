@@ -4,7 +4,7 @@ Configuron is a Clojure library for managing hierarchical properties for deploym
 
 Sample configs.clj:
 
-	{"default" {:max-workers 5
+	{"default" {:max-workers (+ 1 4)
 	            :temp-dir "/tmp"
 	            :async? true
 	            :google-analytics? false
@@ -38,6 +38,12 @@ If you want to be able to draw settings from the Leiningen project map, you'll n
 
 	:plugins [[environ/environ.lein "0.3.0"]]
 	:hooks [environ.leiningen.hooks]
+
+## Installation
+
+Include the following dependency in your project.clj file:
+
+	:dependencies [[configuron "0.1.0"]]
 
 ## Usage
 
