@@ -3,6 +3,7 @@
 Configuron is a Clojure library for managing hierarchical properties for deployment under different environments.
 
 Sample configs.clj:
+
 	{"default" {:max-workers 5
 	            :temp-dir "/tmp"
 	            :async? true
@@ -16,6 +17,7 @@ Sample configs.clj:
 	 "prodheroku" {:aws-key "yyyyy"}}
 	 
 Visual hierarchy for the above configs.clj:
+
 	         default
 	         /     \
 	      dev     prod
