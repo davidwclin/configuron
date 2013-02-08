@@ -32,7 +32,7 @@ Properties are picked in this order of precedence:
 4. abstract environment "prod" (in configs.clj)
 5. "default" (in configs.clj)
 
-The environment name being used (e.g. "prodherouku") <b>must</b> be specified either as an environment variable (ENV_NAME) or as in the Leiningen project map under key :env-name.
+The environment name being used (e.g. "prodherouku") <b>must</b> be specified either as an environment variable (ENV_NAME) or in the Leiningen project map under key :env-name.
 
 If you want to be able to draw settings from the Leiningen project map, you'll need the following plugin and hook:
 
