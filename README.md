@@ -61,6 +61,13 @@ Include the following dependency in your project.clj file:
 
 	<pre>lein with-profile devweb ring server</pre>
 
+## Continuous Integration
+
+[![Continuous Integration status](https://secure.travis-ci.org/davidwclin/configuron.png)](http://travis-ci.org/davidwclin/configuron)
+
+
+CI is hosted by [travis-ci.org](http://travis-ci.org)
+
 ## License
 
 Copyright © 2013 David Lin
