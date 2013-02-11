@@ -1,4 +1,4 @@
-# Configuron
+# Configuron <a href="http://travis-ci.org/#!/davidwclin/configuron/builds"><img src="https://secure.travis-ci.org/davidwclin/configuron.png" /></a>
 
 Configuron is a Clojure library for managing hierarchical properties for deployment under different environments.
 
@@ -60,13 +60,6 @@ Include the following dependency in your project.clj file:
 4. if specifying environment name in Leiningen project map, launch with corresponding profile
 
 	<pre>lein with-profile devweb ring server</pre>
-
-## Continuous Integration
-
-[![Continuous Integration status](https://secure.travis-ci.org/davidwclin/configuron.png)](http://travis-ci.org/davidwclin/configuron)
-
-
-CI is hosted by [travis-ci.org](http://travis-ci.org)
 
 ## License
 
