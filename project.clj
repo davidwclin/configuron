@@ -1,4 +1,4 @@
-(defproject configuron "0.1.0"
+(defproject davidwclin/configuron "0.1.0"
   :description "Configuron is a Clojure library for managing hierarchical properties for deployment under different environments."
   :url "https://github.com/davidwclin/configuron" 
   :resource-paths ["resources"]
